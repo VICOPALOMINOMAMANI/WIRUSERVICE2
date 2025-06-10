@@ -17,15 +17,6 @@ main {
     padding: 20px;
 }
         
-header {
-    background-color: #1a3e72;
-    color: white;
-    padding: 30px 20px;
-    text-align: center;
-    border-radius: 5px;
-    margin-bottom: 20px;
-}
-
 header h1 {
     font-size: 2.5rem;
     margin-bottom: 10px;
@@ -58,17 +49,6 @@ nav a {
 
 nav a:hover {
     background-color: #3a63b3;
-}
-
-#inicio {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('img/banner-metal.jpg');
-    background-size: cover;
-    background-position: center;
-    color: white;
-    padding: 80px 20px;
-    text-align: center;
-    border-radius: 5px;
-    margin-bottom: 30px;
 }
 
 #inicio h2 {
@@ -320,25 +300,6 @@ footer > div:last-child {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-@media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-    
-    #servicios ul {
-        columns: 1;
-    }
-    
-    #inicio h2 {
-        font-size: 1.8rem;
-    }
-    
-    #inicio h3 {
-        font-size: 1.2rem;
-    }
-}
 
          header {
             background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
@@ -595,24 +556,38 @@ footer > div:last-child {
 
 /*SVG*/
 .contenedor-boton {
-  display: inline-flex;
+  display: flex;
+  justify-content: center;
   align-items: center;
+  gap: 150px; 
   position: relative;
-  padding-right: 60px; 
+  margin: 0 auto;
+  width: fit-content;
+  padding: 0px 0; 
 }
 
 .mano-senalando {
-  width: 200px;
-  height: 150px;
+  width: 120px;
+  height: auto;
   position: absolute;
-  right: 140px;
-  top: 45px;                    
-  animation: 
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  animation:
     mover-dedo 2s infinite,
     presionar-dedo 0.5s infinite alternate;
-  z-index: 1;
 }
 
+
+.mano-catalogo {
+  left: -80px; 
+  top: 60%; 
+}
+
+.mano-cotizar {
+  right: 120px; 
+  top: 60%; 
+}
 
 @keyframes mover-dedo {
   0%, 100% { transform: translateX(0) translateY(-50%) rotate(0deg); }

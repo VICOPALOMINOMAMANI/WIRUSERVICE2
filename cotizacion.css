@@ -75,7 +75,86 @@ h2 {
 
 .form-group {
     margin-bottom: 20px;
+    position: relative;
 }
+
+.mano-escritura {
+  position: absolute;
+  width: 40px;
+  height: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  animation: mover-mano 1.5s infinite ease-in-out;
+  z-index: 1;
+}
+
+.mano-nombre {
+  top: 75%;
+  animation-delay: 0s;
+  width: 70px;
+  right: -50px;
+  left: auto;
+}
+
+.mano-empresa {
+  top: 75%;
+  animation-delay: 0.2s;
+  width: 70px;
+  right: -50px;
+  left: auto;
+}
+
+.mano-email {
+  top: 75%;
+  animation-delay: 0.4s;
+  width: 70px;
+  right: -50px;
+  left: auto;
+}
+
+.mano-telefono {
+  top: 75%;
+  animation-delay: 0.6s;
+  width: 70px;
+  right: -50px;
+  left: auto;
+}
+
+.mano-direccion {
+  top: 75%;
+  animation-delay: 0.8s;
+  width: 70px;
+  right: -50px;
+  left: auto;
+}
+
+/* Animación */
+@keyframes mover-mano {
+  0%, 100% {
+    transform: translateY(-70%) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-52%) rotate(-5deg);
+  }
+}
+
+/* Media query */
+@media (max-width: 768px) {
+  .mano-escritura {
+    width: 30px;
+    top: 50%;
+  }
+
+  .mano-nombre,
+  .mano-empresa,
+  .mano-email,
+  .mano-telefono,
+  .mano-direccion {
+    right: 10px;
+  }
+}
+
 
 label {
     display: block;
