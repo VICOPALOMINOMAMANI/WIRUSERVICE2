@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiru Service - Catálogo de Estructuras Metálicas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <header>
+            <h1>WIRU SERVICE</h1>
+            <p>FABRICACIÓN DE ESTRUCTURAS METALICAS</p>
+        </header>
+       <nav>
+            <a href="index.html">Inicio</a>
+            <a href="index.html#nosotros">Nosotros</a>
+            <a href="index.html#proyectos">Proyectos</a>
+            <a href="index.html#servicios">Servicios</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="cotizacion.html">Cotizar</a>
+            <a href="index.html#contacto">Contacto</a>
+        </nav>
+        <section id="catalogo">
+            <h2>Nuestro Catálogo de Estructuras Metálicas</h2>
+            <h3>Calidad y precisión en cada producto</h3>
+            
+            <div class="filtros">
+                <button class="filtro-btn active" data-categoria="todos">Todos</button>
+                <button class="filtro-btn" data-categoria="techos">Techos y Cubiertas</button>
+                <button class="filtro-btn" data-categoria="pasarelas">Pasarelas</button>
+                <button class="filtro-btn" data-categoria="estructuras">Estructuras</button>
+                <button class="filtro-btn" data-categoria="especiales">Especiales</button>
+            </div>
+            
+            <div class="grid-catalogo">
+                <!-- Producto 1 -->
+                <div class="producto" data-categoria="techos">
+                    <img src="img/techo-industrial.jpg" alt="Techo industrial metálico">
+                    <div class="producto-info">
+                        <h3>Techo Industrial Tipo Sandwich</h3>
+                        <p>Panel de acero galvanizado con núcleo aislante. Ideal para naves industriales.</p>
+                        <ul>
+                            <li><strong>Material:</strong> Acero galvanizado</li>
+                            <li><strong>Espesor:</strong> 40mm, 60mm, 80mm</li>
+                            <li><strong>Color:</strong> Varios disponibles</li>
+                        </ul>
+                        <a href="cotizacion.html" class="boton-cotizar">Solicitar cotización</a>
+                    </div>
+                </div>
+                
+                <!-- Producto 2 -->
+                <div class="producto" data-categoria="pasarelas">
+                    <img src="img/pasarela-industrial.jpg" alt="Pasarela industrial">
+                    <div class="producto-info">
+                        <h3>Pasarela Industrial Antideslizante</h3>
+                        <p>Estructura de acero con piso antideslizante para seguridad de los trabajadores.</p>
+                        <ul>
+                            <li><strong>Material:</strong> Acero ASTM A36</li>
+                            <li><strong>Ancho:</strong> Desde 0.8m hasta 2m</li>
+                            <li><strong>Protección:</strong> Pintura epóxica</li>
+                        </ul>
+                        <a href="cotizacion.html" class="boton-cotizar">Solicitar cotización</a>
+                    </div>
+                </div>
+                
+                <!-- Producto 3 -->
+                <div class="producto" data-categoria="estructuras">
+                    <img src="img/estructura-almacen.jpg" alt="Estructura para almacén">
+                    <div class="producto-info">
+                        <h3>Estructura para Almacén Industrial</h3>
+                        <p>Sistema de columnas y vigas para soporte de techumbres en almacenes.</p>
+                        <ul>
+                            <li><strong>Material:</strong> Perfiles de acero</li>
+                            <li><strong>Luz:</strong> Hasta 30m sin apoyos intermedios</li>
+                            <li><strong>Resistencia:</strong> Hasta 150kg/m²</li>
+                        </ul>
+                        <a href="cotizacion.html" class="boton-cotizar">Solicitar cotización</a>
+                    </div>
+                </div>
+                
+                <!-- Producto 4 -->
+                <div class="producto" data-categoria="especiales">
+                    <img src="img/escalera-metalica.jpeg" alt="Escalera metálica">
+                    <div class="producto-info">
+                        <h3>Escalera Metálica de Servicio</h3>
+                        <p>Escalera fija para acceso a diferentes niveles en plantas industriales.</p>
+                        <ul>
+                            <li><strong>Material:</strong> Acero inoxidable/carbon steel</li>
+                            <li><strong>Altura:</strong> Desde 2m hasta 20m</li>
+                            <li><strong>Protección:</strong> Barandal de seguridad</li>
+                        </ul>
+                        <a href="cotizacion.html" class="boton-cotizar">Solicitar cotización</a>
+                    </div>
+                </div>
+                
+                <!-- Producto 5 -->
+                <div class="producto" data-categoria="techos">
+                    <img src="img/cubierta-metalica.jpg" alt="Cubierta metálica">
+                    <div class="producto-info">
+                        <h3>Cubierta Metálica Arquitectónica</h3>
+                        <p>Sistema de cubierta para edificios con diseño arquitectónico especial.</p>
+                        <ul>
+                            <li><strong>Material:</strong> Acero prepintado</li>
+                            <li><strong>Forma:</strong> Curvas y diseños personalizados</li>
+                            <li><strong>Durabilidad:</strong> 20+ años</li>
+                        </ul>
+                        <a href="cotizacion.html" class="boton-cotizar">Solicitar cotización</a>
+                    </div>
+                </div>
+                
+                <!-- Producto 6 -->
+                <div class="producto" data-categoria="estructuras">
+                    <img src="img/componente-maquinaria.jpg" alt="Estructura mezzanine">
+                    <div class="producto-info">
+                        <h3>Componentes Para Maquinaria Pesada</h3>
+                        <p>Fabricación de componentes y repuestos para todo tipo de maquinaria pesada.</p>
+                        <ul>
+                            <li><strong>Material:</strong> Acero estructural</li>
+                            <li><strong>Bajo Norma:</strong> De acuerdo a la maquinaria requerida.</li>
+                            <li><strong>Personalizable:</strong> Medidas a requerimiento</li>
+                        </ul>
+                        <a href="cotizacion.html" class="boton-cotizar">Solicitar cotización</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-contenido">
+                <div>
+                    <h3>Wiru Service</h3>
+                    <p>Fabricación de estructuras metálicas en Arequipa, Perú</p>
+                </div>
+                <div>
+                    <h3>Enlaces rápidos</h3>
+                    <a href="index.html">Inicio</a>
+                    <a href="index.html#nosotros">Nosotros</a>
+                    <a href="catalogo.html">Catálogo</a>
+                    <a href="index.html#proyectos">Proyectos</a>
+                </div>
+                <div>
+                    <h3>Contacto</h3>
+                    <p>Teléfono: +51 983768539</p>
+                    <p>Email: info@wiruservice.com</p>
+                    <p>Dirección: Urb. Puente Accha B-12, Peruarbo, Cerro Colorado, Arequipa.</p>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2025 Wiru Service. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
